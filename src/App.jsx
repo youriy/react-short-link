@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {Layout} from "./components/Layout.jsx";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-      <h1>grgrgrgrg</h1>
+        <Layout/>
     </React.StrictMode>
 );
