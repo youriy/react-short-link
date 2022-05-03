@@ -1,0 +1,55 @@
+@import "src/scss/app";
+
+.container {
+  height: 310px;
+  background-color: black;
+}
+
+.footer {
+  @extend %container;
+  padding-top: 72px;
+  display: flex;
+  flex-direction: row;
+
+  &__logo {
+    width: 380px;
+  }
+
+  &__nav {
+    display: flex;
+  }
+}
+
+.nav {
+  margin-right: 90px;
+
+  &__title {
+    color: white;
+    font-weight: bold;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 22px;
+
+    li {
+      margin: 10px 0;
+
+      a{
+        text-decoration: none;
+        color: $color-gray;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.social {
+
+  a{
+    margin-left: 20px;
+  }
+}
+
+

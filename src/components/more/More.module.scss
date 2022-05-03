@@ -1,0 +1,52 @@
+@import "src/scss/app";
+
+.more {
+  @extend %container;
+  position: relative;
+
+  &__title {
+    font-size: 80px;
+    font-weight: bold;
+    width: 590px;
+    margin-top: 80px;
+    line-height: 1.1;
+  }
+
+  &__text {
+    width: 590px;
+    font-size: 24px;
+    font-weight: 500;
+    color: $color-gray;
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+
+  &__button {
+    padding: 20px 22px;
+    background-color: $color-main;
+    border-radius: 34px;
+    width: 200px;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 46px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+    }
+  }
+
+  &__img {
+    top: -58px;
+    position: absolute;
+    right: -250px;
+  }
+
+
+}

@@ -1,0 +1,77 @@
+@import "src/scss/app";
+
+.feature_content {
+  background-color: $color-gray-background;
+}
+
+.features {
+  @extend %container;
+  display: flex;
+  justify-content: center;
+  padding-top: 213px;
+  margin-top: -90px;
+
+  &__info {
+    width: 515px;
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 38px;
+  }
+
+  &__subtitle {
+    text-align: center;
+    margin-top: 25px;
+    color: $color-gray;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.7;
+  }
+}
+
+.items {
+  @extend %container;
+  display: flex;
+  margin-top: 106px;
+  justify-content: space-between;
+  padding-bottom: 120px;
+}
+
+.item {
+  width: 350px;
+  height: 268px;
+  border-radius: 8px;
+  position: relative;
+  background-color: white;
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: $color-violet;
+    position: absolute;
+    top: -48px;
+    left: 25px;
+  }
+
+  &__title {
+    font-weight: bold;
+    width: 300px;
+    margin: 80px auto 12px auto;
+    font-size: 22px;
+  }
+
+  &__text {
+    color: $color-gray;
+    width: 300px;
+    margin: 0 auto;
+    line-height: 1.7;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}

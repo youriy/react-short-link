@@ -5,6 +5,10 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
 }
 
+#root {
+  overflow: hidden;
+}
+
 %container {
   max-width: 1112px;
   margin: 0 auto;

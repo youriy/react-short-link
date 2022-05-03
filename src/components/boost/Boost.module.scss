@@ -1,0 +1,47 @@
+@import "src/scss/app";
+
+.boost {
+  position: relative;
+  height: 250px;
+  background-color: $color-violet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__title {
+    z-index: 1;
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+  }
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  &__action {
+    padding: 20px 22px;
+    background-color: $color-main;
+    border-radius: 34px;
+    width: 200px;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 30px;
+    cursor: pointer;
+    z-index: 1;
+
+    &:hover {
+      background-color: $color-main-hover;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+    }
+  }
+}
