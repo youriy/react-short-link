@@ -32,14 +32,14 @@
     z-index: 1;
 
     input {
-      height: 64px;
+      height: 60px;
       width: 770px;
       border-radius: 15px;
-      border: none;
       font-family: "Kumbh Sans", sans-serif!important;
       font-size: 18px;
       font-weight: 500;
       padding-left: 33px;
+      border: 2px solid transparent;
 
       &:focus {
         outline: none;
@@ -63,5 +63,21 @@
         background-color: $color-main-hover;
       }
     }
+
+    span {
+      position: absolute;
+      bottom: 22px;
+      left: 46px;
+      font-style: italic;
+      color: $color-error;
+    }
+  }
+}
+
+.error {
+  border: 2px solid $color-error!important;
+
+  &::placeholder {
+    color: $color-error;
   }
 }
