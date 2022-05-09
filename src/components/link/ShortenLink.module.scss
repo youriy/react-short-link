@@ -1,5 +1,9 @@
 @import "src/scss/app";
 
+.section {
+  background: linear-gradient(white 50%, $color-gray-background 50%);
+}
+
 .shorten {
   @extend %container;
   margin-top: 150px;

@@ -8,8 +8,7 @@
   @extend %container;
   display: flex;
   justify-content: center;
-  padding-top: 170px;
-  margin-top: -90px;
+  padding-top: 80px;
 
   &__info {
     width: 515px;
@@ -36,6 +35,16 @@
   margin-top: 106px;
   justify-content: space-between;
   padding-bottom: 120px;
+  position: relative;
+}
+
+.line {
+  height: 10px;
+  width: 100%;
+  position: absolute;
+  background-color: $color-main;
+  bottom: 68%;
+  z-index: 0;
 }
 
 .item {
@@ -44,6 +53,7 @@
   border-radius: 8px;
   position: relative;
   background-color: white;
+  z-index: 1;
 
   &__img {
     display: flex;

@@ -1,0 +1,60 @@
+@import "src/scss/app";
+
+.list_container {
+  background-color: $color-gray-background;
+}
+
+.list {
+  @extend %container;
+  padding: 10px 0;
+}
+
+.item {
+  height: 72px;
+  max-width: 100%;
+  width: 100%;
+  margin: 16px 0;
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__original {
+    flex-grow: 1;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__short {
+    font-weight: 500;
+    font-size: 18px;
+    color: $color-main;
+    margin: 0 24px;
+  }
+
+  button {
+    margin-right: 20px;
+    height: 40px;
+    width: 104px;
+    min-width: 104px;
+    background-color: $color-main;
+    border-radius: 9px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-family: "Kumbh Sans", sans-serif!important;
+
+    &:hover {
+      background-color: $color-main-hover;
+    }
+
+    &[data-active="true"] {
+      background-color: $color-violet!important;
+    }
+  }
+}

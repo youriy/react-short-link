@@ -5,6 +5,7 @@ import {ShortenLink} from "./link/ShortenLink.jsx";
 import {Features} from "./features/Features.jsx";
 import {Boost} from "./boost/Boost.jsx";
 import {Footer} from "./footer/Footer.jsx";
+import {List} from "./list/List.jsx";
 
 const Layout = () => {
 
@@ -16,6 +17,7 @@ const Layout = () => {
             <main>
                 <More/>
                 <ShortenLink/>
+                <List/>
                 <Features/>
                 <Boost/>
             </main>

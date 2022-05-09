@@ -53,7 +53,9 @@ const Features = () => {
                         custom={index}
                         variants={featuresAnimation}
                         key={feature.id}
-                        {...feature}/>)}
+                        {...feature}/>
+                )}
+                <motion.div custom={4} variants={featuresAnimation} className={classes.line}/>
             </motion.div>
         </div>
     );
