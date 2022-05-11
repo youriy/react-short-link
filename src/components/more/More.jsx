@@ -34,6 +34,7 @@ const More = () => {
             whileInView="visible"
             viewport={{once: true}}
         >
+            <motion.div variants={scaleAnimation} className={classes.more__img}><img src="./img/illustration-working.svg"/></motion.div>
             <motion.h1
                 className={classes.more__title}
                 custom={1}
@@ -55,7 +56,6 @@ const More = () => {
             >
                 <a href="#" title="Get Started">Get Started</a>
             </motion.div>
-            <motion.div variants={scaleAnimation} className={classes.more__img}><img src="./img/illustration-working.svg"/></motion.div>
         </motion.div>
     );
 }
