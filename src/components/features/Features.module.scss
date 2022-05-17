@@ -36,6 +36,11 @@
   justify-content: space-between;
   padding-bottom: 120px;
   position: relative;
+
+  @media screen and (max-width: 1100px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .line {
@@ -45,6 +50,12 @@
   background-color: $color-main;
   bottom: 68%;
   z-index: 0;
+
+  @media screen and (max-width: 1100px) {
+    transform: rotate(90deg)!important;
+    bottom: 68%;
+    width: 700px;
+  }
 }
 
 .item {
@@ -54,6 +65,20 @@
   position: relative;
   background-color: white;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 1100px) {
+    text-align: center;
+
+    &:not(:first-child) {
+      margin-top: 100px!important;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 100%;
+  }
 
   &__img {
     display: flex;
@@ -63,22 +88,25 @@
     height: 90px;
     border-radius: 50%;
     background-color: $color-violet;
-    position: absolute;
-    top: -48px;
-    left: 25px;
+    margin-left: 24px;
+    margin-top: -50px;
+
+    @media screen and (max-width: 1100px) {
+     margin-left: 0;
+      align-self: center;
+    }
   }
 
   &__title {
     font-weight: bold;
     width: 300px;
-    margin: 80px auto 12px auto;
+    margin: 35px auto 12px auto;
     font-size: 22px;
   }
 
   &__text {
     color: $color-gray;
-    width: 300px;
-    margin: 0 auto;
+    margin: 0 24px;
     line-height: 1.7;
     font-size: 16px;
     font-weight: 500;

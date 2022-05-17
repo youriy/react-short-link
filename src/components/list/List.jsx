@@ -21,16 +21,18 @@ const List = () => {
                         <motion.div
                             className={classes.item}
                             initial={{opacity: 0, height: 0}}
-                            animate={{opacity: 1, height: 72}}
+                            animate={{opacity: 1, height: 'auto'}}
                         >
                             <div className={classes.item__original}>{link.original}</div>
                             <div className={classes.item__short}>{link.short}</div>
-                            <button
-                                onClick={() => copyToClipboard(link.short)}
-                                data-active={link.short === copiedLink}
-                            >
-                                {link.short === copiedLink ? 'Copied!' : 'Copy'}
-                            </button>
+                            <div className={classes.item__button}>
+                                <button
+                                    onClick={() => copyToClipboard(link.short)}
+                                    data-active={link.short === copiedLink}
+                                >
+                                    {link.short === copiedLink ? 'Copied!' : 'Copy'}
+                                </button>
+                            </div>
                         </motion.div>
                     </AnimatePresence>
                 )}

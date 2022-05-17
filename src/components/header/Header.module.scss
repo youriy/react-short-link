@@ -25,6 +25,10 @@
       &:hover {
         color: black;
       }
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
   }
 
@@ -50,18 +54,20 @@
       &:hover {
         color: black;
       }
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
 
+    &_burger {
+      height: 38px;
+      width: auto;
+      color: $color-gray;
+
+      @media screen and (min-width: 769px) {
+        display: none;
+      }
+    }
   }
-
-
-
-
-
-
-
-
-
-
-
 }

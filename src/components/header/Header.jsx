@@ -1,5 +1,6 @@
 import React from 'react';
 import {header} from "./data";
+import {IoMenu} from 'react-icons/io5';
 import classes from './Header.module.scss';
 
 const Header = () => {
@@ -13,6 +14,7 @@ const Header = () => {
             <div className={classes.header__login}>
                 <a href='#' title='Login'>Login</a>
                 <a className={classes.header__login_signup} href='#' title='Sign Up'>Sign Up</a>
+                <IoMenu className={classes.header__login_burger}/>
             </div>
         </div>
     );

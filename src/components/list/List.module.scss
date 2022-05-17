@@ -10,15 +10,18 @@
 }
 
 .item {
-  height: 72px;
   max-width: 100%;
-  width: 100%;
   margin: 16px 0;
   background-color: white;
   border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 14px 0;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
 
   &__original {
     flex-grow: 1;
@@ -28,6 +31,12 @@
     white-space: nowrap;
     overflow-x: hidden;
     text-overflow: ellipsis;
+
+    @media screen and (max-width: 768px) {
+      margin-left: 0;
+      padding: 5px 18px 15px 18px;
+      border-bottom: 1px $color-gray-background solid;
+    }
   }
 
   &__short {
@@ -35,6 +44,16 @@
     font-size: 18px;
     color: $color-main;
     margin: 0 24px;
+
+    @media screen and (max-width: 768px) {
+      margin: 18px;
+    }
+  }
+
+  &__button {
+    @media screen and (max-width: 768px) {
+      margin: 0 18px;
+    }
   }
 
   button {
@@ -55,6 +74,10 @@
 
     &[data-active="true"] {
       background-color: $color-violet!important;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
     }
   }
 }

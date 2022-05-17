@@ -19,6 +19,7 @@ const ShortenLink = () => {
             <div className={classes.shorten}>
                 <div className={classes.shorten__container}>
                     <img className={classes.shorten__background} src="./img/bg-shorten-desktop.svg"/>
+                    <img className={classes.shorten__mobile} src="./img/bg-shorten-mobile.svg"/>
                     <form
                         onSubmit={handleSubmit(onSubmit)}
                         className={classes.shorten__form}
